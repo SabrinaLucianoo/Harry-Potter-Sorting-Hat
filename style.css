@@ -1,0 +1,145 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Define as características comuns a todas as divs */
+.infoHouses {
+    flex: 1;
+    /* Distribui o espaço igualmente entre as faixas */
+    border: 1px solid #000;
+    text-align: center;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
+}
+
+/* Define um container maior, que alinha os retângulos de cada div */
+.container {
+    display: flex;
+    height: 100vh;
+    /* 100% da altura da viewport (tela vísivel sem rolagem*/
+    background-color: black;
+}
+
+/* Define uma "aura" as imagem */
+.Aura {
+    display: inline-block;
+    filter: url(#drop-shadow);
+    /* Referencia o filtro SVG (Filtro que define uma sombra de acordo com a silhueta da imagem) */
+}
+
+/* Define os aspectos da DIV onde está o botão*/
+.button {
+    position: absolute; /* Define o posicionamento absoluto */
+    top: 630px; /* Define a distância do topo em pixels */
+    left: 50%; /* Define a distância da esquerda em relação ao centro */
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    color: #000; /* Cor do texto do botão */
+    font-size: 22px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    border-radius: 5px; /* Adiciona cantos arredondados ao botão */
+    background-color: #ffff;
+    padding: 2px 8px;
+    width: 300px;
+    height: 70px;
+    display: flex; /* Define o layout da div como flexível */
+    align-items: center; /* Alinha os itens verticalmente */
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #000;
+    color: white;
+    box-shadow: 0 0 30px #fff 0.5;
+}
+
+#chapeuSeletor {
+    max-width: 150px; /* Define uma largura máxima para a imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 0.5px; /* Adiciona um espaço entre a imagem e o texto */
+    margin-top: -20px;
+    transform: rotate(25deg);
+    filter: url(#drop-shadow);
+
+}
+
+/* Estilização dos títulos */
+.titles {
+    font-family: "Briem Hand", cursive;
+    font-size: 50px;
+}
+
+#titleGrif {
+    color: #FFD700;
+}
+
+#titleSly {
+    color: #e8e8e8;
+}
+
+#titleHuf {
+    color: #000;
+}
+
+#titleRav {
+    color: #9c9c9c;
+}
+
+/* Estilização do corpo de cada div*/
+.fraseCasas {
+    font-size: 25px;
+    text-align: right;
+    font-family: 'comic sans', sans-serif;
+    color: #ffff;
+}
+
+.temaCasas {
+    color: #ffff;
+    font-size: 20px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Define o fundo de cada Div */
+#divGri {
+    background-color: #B22222;
+}
+
+#divRav {
+    background-color: #191970;
+}
+
+#divSly {
+    background-color: #006400;
+}
+
+#divHuf {
+    background-color: #ffd900cf;
+}
+
+
+
+#mensagem{
+    position: absolute; /* Define a posição absoluta */
+            top: 50%; /* Centraliza verticalmente */
+            left: 50%; /* Centraliza horizontalmente */
+            transform: translate(-50%, -50%); /* Move a div de mensagem de volta para o centro */
+            background-color: #f0f0f0; /* Cor de fundo */
+            padding: 20px; /* Espaçamento interno */
+            border-radius: 200px; /* Cantos arredondados */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Sombra */
+            display: none; /* Inicialmente oculta a mensagem */
+            width: 400px;
+            height: 50px;
+            font-size: 50px;
+            text-align: center;
+            font-style: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border: 5px solid goldenrod
+
+
+}
